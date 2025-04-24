@@ -1,0 +1,61 @@
+body {
+  font-family: 'Inter', sans-serif;
+  padding: 2rem;
+  background: linear-gradient(to right, #1e1e1e, #4989a8);
+  color: #e5e5e5;
+  line-height: 1.6;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #a5a5a5;
+}
+
+#cryptoPrices {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.crypto-card {
+  background: #ffffff;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 1.5rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.crypto-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.crypto-card h2 {
+  margin: 0 0 0.5rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #34495e;
+}
+
+.price {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #2c3e50;
+  margin: 0.5rem 0;
+}
+
+.change {
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.change.positive {
+  color: #27ae60;
+}
+
+.change.negative {
+  color: #c0392b;
+}
